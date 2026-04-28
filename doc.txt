@@ -1,0 +1,285 @@
+==============================
+🧠 FairAI – Complete Prompt File
+================================
+
+---
+
+1. LOGIN SCREEN
+
+---
+
+Create a login screen UI.
+
+* Centered login card
+* Fields:
+  Email
+  Password
+* Button: Login
+
+On click:
+
+* Hide login screen
+* Show dashboard
+
+---
+
+2. DASHBOARD + SIDEBAR
+
+---
+
+Create a dashboard layout with left sidebar.
+
+Sidebar items:
+
+* Dashboard
+* Upload Data
+* Bias Analysis
+* Fairness Metrics
+* Smart Recommendations
+* Simulation
+* Report
+
+Design:
+
+* Dark sidebar
+* Highlight active item
+* Smooth hover effect
+
+Main content:
+
+* Scrollable
+* Smooth transitions
+
+---
+
+3. UPLOAD DATA (AUTO ANALYSIS)
+
+---
+
+Create upload section.
+
+* Drag & drop box
+* Button: Choose File
+
+After upload:
+
+* Show file name
+* Show loading:
+  “Reading dataset…”
+  “Analyzing fairness…”
+
+Then display:
+
+* Bias Result
+* Fairness Score
+* Risk Level
+
+---
+
+4. BIAS ANALYSIS (REAL LOGIC)
+
+---
+
+Add inputs:
+
+* Male Selected
+* Male Total
+* Female Selected
+* Female Total
+
+Button: Analyze Bias
+
+Logic:
+
+Male Rate = Male Selected / Male Total
+Female Rate = Female Selected / Female Total
+
+Difference = absolute difference
+Fairness Score = 100 - (difference * 100)
+
+If difference > 0.2:
+Biased, High Risk
+
+If 0.1–0.2:
+Biased, Medium Risk
+
+If < 0.1:
+Fair, Low Risk
+
+Store globally:
+
+* biasResult
+* fairnessScore
+* riskLevel
+* maleRate
+* femaleRate
+* analysisDone = true
+
+---
+
+5. DASHBOARD CARDS
+
+---
+
+Show 3 cards:
+
+* Bias Result
+* Fairness Score
+* Risk Level
+
+Design:
+
+* Rounded corners
+* Light shadow
+* Animation on load
+
+---
+
+6. VISUALIZATION (CHARTS)
+
+---
+
+Show charts:
+
+* Bar chart:
+  Male vs Female
+
+* Pie chart:
+  Selected vs Rejected
+
+Update dynamically using stored values.
+
+---
+
+7. SMART RECOMMENDATIONS
+
+---
+
+If analysisDone = false:
+
+* Show:
+  “Run Bias Analysis first”
+
+If true:
+
+If Biased:
+
+* Increase representation
+* Rebalance dataset
+* Apply fairness constraints
+* Review thresholds
+
+If Fair:
+
+* System is fair
+* Continue monitoring
+
+Show with animation (one by one).
+
+---
+
+8. SIMULATION (BALANCING)
+
+---
+
+Button:
+“Simulate Balanced Data”
+
+On click:
+
+balancedRate = (maleRate + femaleRate) / 2
+
+Set:
+
+* maleRate = balancedRate
+* femaleRate = balancedRate
+* biasResult = Fair
+* fairnessScore = 95+
+* riskLevel = Low
+
+Show:
+
+BEFORE:
+
+* old rates
+
+AFTER:
+
+* new equal rates
+
+Animate:
+
+* Score increase
+* Color change (Red → Green)
+
+---
+
+9. REPORT GENERATION
+
+---
+
+If analysisDone = false:
+
+* Show:
+  “Please run analysis first”
+
+If true:
+
+Show:
+
+* File Name
+* Bias Result
+* Fairness Score
+* Risk Level
+
+Summary:
+“Bias detected due to unequal selection rates”
+
+Button:
+“Generate Report”
+
+Show success message.
+
+---
+
+10. SCROLL + NAVIGATION FIX
+
+---
+
+* Sidebar fixed
+* Main content scrollable
+* Smooth scrolling
+* Auto-scroll to sections
+
+---
+
+11. EXTRA: CONFIDENCE SCORE
+
+---
+
+Add:
+
+“Data Confidence Score”
+
+Show percentage (70–95%)
+
+Message:
+
+* High → Reliable
+* Low → Needs more data
+
+---
+
+12. EXTRA: AUDIT LOG
+
+---
+
+Show timeline:
+
+* File uploaded
+* Analysis done
+* Simulation run
+
+---
+
+## END OF FILE
