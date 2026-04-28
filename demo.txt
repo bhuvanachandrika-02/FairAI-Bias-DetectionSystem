@@ -1,0 +1,25 @@
+Hello, our project is FairAI, an AI Bias Detection System.
+
+In today’s world, many important decisions such as hiring, loan approvals, and admissions are made using automated systems. However, these systems can sometimes produce biased results without our knowledge. Our project focuses on identifying and reducing such bias.
+
+This is the login screen. It provides secure access to the system. After logging in, the user is taken to the main dashboard.
+
+This is the dashboard. It contains all the features of our system, organized in a sidebar for easy navigation.
+
+First, we go to the Upload Data section. Here, the user can upload a dataset in CSV or Excel format. Once the file is uploaded, the system prepares the data for analysis.
+
+Next, we move to the Bias Analysis section. Here, we enter values for different groups. For example, we enter selected and total counts for male and female groups. When we click analyze, the system calculates selection rates and compares them.
+
+Based on this, it shows the bias result, fairness score, and risk level. If there is a large difference between groups, the system identifies it as biased.
+
+Then we go to the visualization section. The system displays charts such as bar charts and pie charts. These help us clearly understand the imbalance between groups.
+
+Next is the Smart Recommendations section. Based on the analysis, the system suggests ways to improve fairness. For example, it may suggest balancing the dataset or adjusting decision rules.
+
+Now we move to the Simulation section. This is one of the key features. When we run the simulation, the system adjusts the data to reduce bias. We can see that the fairness score improves and the bias changes from biased to fair.
+
+Finally, we go to the Report section. Here, the system generates a summary of the analysis, including results and recommendations.
+
+In conclusion, FairAI not only detects bias but also explains it, visualizes it, and helps improve fairness using simulation and recommendations. This makes AI systems more transparent and reliable.
+
+Thank you.
